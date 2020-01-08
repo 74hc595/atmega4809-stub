@@ -1,0 +1,8 @@
+.DS_Store
+*.swp
+*.elf
+*.hex
+*.lst
+*.map
+*.d
+*.o
