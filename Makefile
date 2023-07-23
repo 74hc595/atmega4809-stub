@@ -82,7 +82,7 @@ $(OUT).elf: $(OBJ)
 
 $(OUT).hex: $(OUT).elf
 	rm -f $(OUT).hex $(OUT).eep.hex
-	$(OBJCOPY) -j .text -j .data -O ihex $(OUT).elf $(OUT).hex
+	$(OBJCOPY) -j .text -j .data -j .rodata -O ihex $(OUT).elf $(OUT).hex
 	$(SIZE) $(OUT).hex
 
 # debugging targets:
